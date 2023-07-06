@@ -3,31 +3,32 @@
 
 
 
-int Q1_for(){
+int Q1_for(int num){
 	int sum;
 	
 	// calculate your sum below..this has to use for loop
-	
-	
-	
+
+
+
 	// here, we return the calcualted sum:
 	return sum;
 }
-int Q1_while(){
+int Q1_while(int num){
 	int sum;
 
-
 	// calculate your sum below..this has to use while loop
-	
+
+
+
 	
 	// here, we return the calcualted sum:
 	return sum;
 }
-int Q1_do(){
+int Q1_dowhile(int num){
 	int sum;
 	
 	// calculate your sum below..this has to use do-while loop
-	
+
 
 	  
 	
@@ -35,84 +36,25 @@ int Q1_do(){
 	return sum;
 }
 //===============================================================================================
-int Q2(int Q2_input){
+int Q2_FPN(float Q2_input, float Q2_threshold){
 	
-	// this is the flag that is holding whether the input number is 5-digit or not
-	int IsFiveDigit;
-	
-	// Do your coding below to check
-	
-
+	int result;
+	// Determine which range does Q2_input fall into.  Keep in mind the floating point number range.
+	// Assign the correct output to the result.
 
 	            
 	
-	//finally, we must return IsFiveDigit, which must be 1 is the number is five digits and 0 otherwise
-	return IsFiveDigit;
-}
-//===============================================================================================
-int Q3(float Q3_input){
-	
-	/* Question 3: 
-	Write a program that takes a student's Q3_input as an input, which is a floating point value,
-	and returns:
-	4 if the Q3_input is in the range 90-100,
-	3 if it is in the range 80-89, 
-	2 if it is in the range 70-79,
-	1 if it is in the range 60-69 and
-	0 if the Q3_input is between 0 and 59.
-	If the Q3_input is not in the range 0-100, the program shouldreturn -1
-*/	
-	// this is the varaible that holds the out value to return
-	float GPA;
-	
-	
-	// Do your coding below to calculate the GPA variable value
-	
-	 
-	
-	
-	// finally, we return the GPA
-	return GPA;	
-}
-//===============================================================================================
-double Q4(int Q4_input){
-	
-	// this is the varaible that holds the pi value to return
-	double pi=0;
-	
-	
-	// Do your coding below to calculate the pi value
-	
-
-	   
-	
-	// finally, we return the pi value
-	return pi;	
-}
-//===============================================================================================
-int Q5(){
-	
-	// this is the varaible that holds and the total number of triples to return at the end of the function
-	int totNumTribles=0;
-	
-	
-	/* Do your coding below
-		Use a triple-nested for loop that simply tries all possibilities
-		and update the total number of triples if needed
-	*/
-	
 
 
-	
-	//finally you should return the total number of tribles.
-	return totNumTribles;
+	// Finally, return the result.
+	return result;
 }
 //===============================================================================================
-int Q6(int Q6_input, int perfect[]){
+int Q3(int Q3_input, int perfect[]){
 	
 	
 	
-		//counts is teh variable that should hold the total number of found perfect numbers
+		//counts is the variable that should hold the total number of found perfect numbers
 		//you should update it within your code and return it at the end
 	    int counts=0;
 
@@ -132,39 +74,26 @@ int Q6(int Q6_input, int perfect[]){
 
 	   return counts;
 
-	
 }
 //===============================================================================================
-int Q7a(int Q7_input){
+int Q4_Bubble(int array[], int size){
 	
-	//this is the variable that holds the reversed int.
-	int reversedInt=0;
-	
-	
-	// Do your coding logic here
-	//Hint: Use the division and remainder operators to separate the number into its individual digits.
-	//in this part you can assume the knowledge of the number of digits: seven-digit positive integer
-	
-	
-		return reversedInt;
-	
-}
-int Q7b(int Q7b_input){
-	
-	//this is the variable that holds the reversed int.
-	int reversedInt=0;
-	
-	
+	// This variable tracks the number of passes done on the array to sort the array.
+	int passes = 0;
 
-	// Do your coding logic here
-	//Hint: Use the division and remainder operators to separate the number into its individual digits.
-	//this part should be generalized for any number of allowed digits
-	
-	
-	
-	return reversedInt;
+	// Pseudocode
+	// 	1. Given an array and its size, visit every single element in the array up to size-2 (i.e. up to the second last element, omit the last element)
+	//  2. For every visited element (current element), check its subsequent element (next element).  
+	//     If the next element is larger, swap the current element and the next element. 
+	//  3. Continue until reaching size-2 element.  This is considered One Pass => increment pass count by one.
+	//  4. Repeat 1-3 until encountering a pass in which no swapping was done.
+	//   -> Sorting Completed.
 
-	
-	
-	
+
+
+
+
+
+	// Finally, return the number of passes used to complete the Bubble Sort
+	return passes;	
 }
