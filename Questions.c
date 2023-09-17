@@ -84,7 +84,7 @@ int Q4_Bubble(int array[], int size){
 	// Pseudocode
 	// 	1. Given an array and its size, visit every single element in the array up to size-2 (i.e. up to the second last element, omit the last element)
 	//  2. For every visited element (current element), check its subsequent element (next element).  
-	//     If the next element is larger, swap the current element and the next element. 
+	//     If the next element is smaller, swap the current element and the next element. 
 	//  3. Continue until reaching size-2 element.  This is considered One Pass => increment pass count by one.
 	//  4. Repeat 1-3 until encountering a pass in which no swapping was done.
 	//   -> Sorting Completed.

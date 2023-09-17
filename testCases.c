@@ -23,6 +23,7 @@
         expected = 13986;
         CuAssertIntEquals(tc, expected, actual);
     }
+
     void TestQ1_while(CuTest *tc) {
 
         int actual = Q1_while(3);
@@ -51,6 +52,8 @@
         expected = 13986;
         CuAssertIntEquals(tc, expected, actual);
     }
+
+
 //===========================================================
 //=================Question 2================================
     void TestQ2(CuTest *tc) {
@@ -86,6 +89,8 @@
         expected = -999;
         CuAssertIntEquals(tc, expected, actual);
     }   
+
+
 
 
 //===========================================================
@@ -206,8 +211,8 @@
         for (i = 0; i < inputSize; i++)
             CuAssertIntEquals(tc, expectedArray[i], targetArray[i]);
     } 
-    
 
+  
 
     CuSuite* Lab1GetSuite() {
         
@@ -233,7 +238,6 @@
         SUITE_ADD_TEST(suite, TestQ4_8);
         SUITE_ADD_TEST(suite, TestQ4_16);
         SUITE_ADD_TEST(suite, TestQ4_25);
-
 
 
         return suite;
