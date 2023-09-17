@@ -1,4 +1,4 @@
-# compeng2sh4-lab1-starter
+# COE2SH4-Lab1Template
 
 Section: [Insert your lab section]
 
