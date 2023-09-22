@@ -203,9 +203,20 @@
 		int targetArray[25] = {889, 12, 69, 7, -25, 25, 353, -1422, -1, -65535, 11, 89, 63, -375, 227, 55, 3688, -324, 71, -6, -31, 88, 477, -5225, -91};
 		int inputSize = 25;
         int expectedArray[25] = {-65535, -5225, -1422, -375, -324, -91, -31, -25, -6, -1, 7, 11, 12, 25, 55, 63, 69, 71, 88, 89, 227, 353, 477, 889, 3688};
-        int expectedPass = 23;
+
+        // three possible passes, all valid.  We are not grading for efficiency optimization.
+        int expectedPass1 = 23;
+        int expectedPass2 = 24;
+        int expectedPass3 = 25; 
+
         int actualPass = Q4_Bubble(targetArray, inputSize);        
-        CuAssertIntEquals(tc, expectedPass, actualPass);
+        
+        if(actualPass == expectPass1)
+            CuAssertIntEquals(tc, expectedPass1, actualPass);
+        else if(actualPass == expectedPass2)
+            CuAssertIntEquals(tc, expectedPass2, actualPass);
+        else
+            CuAssertIntEquals(tc, expectedPass3, actualPass);
 
         int i;
         for (i = 0; i < inputSize; i++)
