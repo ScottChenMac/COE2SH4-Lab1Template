@@ -211,7 +211,7 @@
 
         int actualPass = Q4_Bubble(targetArray, inputSize);        
         
-        if(actualPass == expectPass1)
+        if(actualPass == expectedPass1)
             CuAssertIntEquals(tc, expectedPass1, actualPass);
         else if(actualPass == expectedPass2)
             CuAssertIntEquals(tc, expectedPass2, actualPass);
